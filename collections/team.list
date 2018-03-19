@@ -1,0 +1,11 @@
+  <div id="team" class="fullwidth2">
+          <h2 class="team-header para">{title}</h2>
+          {.repeated section items}
+          <div class="box3 hero hide-me team-image">
+            <img class="" src="{customContent.teamImage.assetUrl}" alt="">
+          </div>
+          <h3 class="team-header2 para">{customContent.teamSubheader}</h3>
+          <div class="gutter team-body para">
+            {customContent.teamBody.source}
+          </div>
+        </div>

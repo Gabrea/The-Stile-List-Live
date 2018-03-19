@@ -1,0 +1,218 @@
+{.section collection}
+
+  <!-- Create index sections -->
+
+  {.repeated section collections}
+      
+      {.collectionTypeNameEquals? home}
+        {.repeated section items}
+        <div id="" class="home">
+            
+            <div class="box1 hero feature-image">
+            <img class="main-logo paramax" src="{customContent.homeLogo.assetUrl}" alt="">
+            <img class="image" src="{customContent.homeImage.assetUrl}" alt="">
+            </div>
+            <div class="background2 paramax2"></div>
+            <div class="background"></div>
+            <a href="#about"><div class="arrow"></div></a>
+        </div>
+        {.end}
+      {.end}
+      
+      {.collectionTypeNameEquals? section}
+          <div id="" class="about">
+            {.repeated section items}
+              <div id="about" class="box2 hero hide-me about-image">
+                <img class="" src="{customContent.aboutImage.assetUrl}" alt="">
+              </div>
+              <div class="hide-me about-section para">
+                {.if customContent.aboutHeader}
+                
+                <h3 class="w-100">{customContent.aboutHeader}</h3>
+                {.end}
+                {.if customContent.aboutBody}
+                <div class="w-100 top-3">{customContent.aboutBody.source}</div>
+                {.end}
+              </div>
+            {.end}
+          </div>
+          
+   
+      {.end}
+      {.collectionTypeNameEquals? team}
+        
+        <div id="" class="fullwidth2 team">
+          <h2 id="team" class="team-header para">{title}</h2>
+          {.repeated section items}
+          <div class="box3 hero hide-me team-image">
+            <img  class="" src="{customContent.teamImage.assetUrl}" alt="">
+          </div>
+          <div class="gutter team-body para">
+          <h3 class="team-header2">{customContent.teamSubheader}</h3>
+          
+            {customContent.teamBody.source}
+          </div>
+        </div>
+        {.end}
+
+      {.end}
+      {.collectionTypeNameEquals? gallery}
+        <div id="" class="team-1 fullwidth">
+            <h2 class="team1-header para">Recent work </h2>
+            <div id="galleryslider" class="hide-me carousel testimonials">
+                  <a id="prev" class="prev" href="javascript:;"></a>
+                  <a id="next" class="next" href="javascript:;"></a>
+                  <div id=slides>
+                    <div id=overflow>
+                      <div class=inner>
+                       {.repeated section items}
+                        <article>
+                           <img {@|image-meta} class="hero" src="{customContent.mainImage}" alt="">
+                        </article>
+                        {.end}
+                      </div> 
+                    </div> 
+                  </div> 
+            </div>
+         </div>
+      {.end}
+
+      {.collectionTypeNameEquals? services}
+          <div id="" class="team-2 fullwidth">
+              {.repeated section items}
+              <div class="hide-me services-item">
+                
+                <div class="box4">
+                  <img  class="hero" src="{customContent.serviceImage.assetUrl}" alt="">
+                </div>
+                <div class="service-box para">
+                  <h1 class="service-header">{customContent.serviceHeader}</h1>
+                  <div class="service-body">{customContent.serviceBody.source}</div>
+                </div>
+              </div>
+             {.end}
+          </div>
+     
+      {.end}
+
+      {.collectionTypeNameEquals? brands}
+        <div  class="brands fullwidth">
+          <h2 class="hide-me brands-header para">Our brand portfolio </h2>
+
+          <div class="brand-wrapper hide-me">
+           <div id="brands"class="brand-inner">
+            {.repeated section items}
+                  
+                    <div class="brandname">
+                      <img class="brand-logo" src="{customContent.brandlogo.assetUrl}">
+                      <img class="brand-bk" src="{customContent.brandImage.assetUrl}">
+                      <a class="brand-link" target="_blank"href="{customContent.brandLink}"></a>
+                    </div>
+            {.end} 
+            </div>
+          </div>
+        </div>
+
+      {.end}
+
+      {.collectionTypeNameEquals? testimonial}
+          <div  class="brands-1 fullwidth">
+            <h2 class="hide-me testimonial-header para">Testimonials </h2>
+            <div class="hide-me testimonials">
+              <div id="testimonialslide" class="hide-me carousel testimonials">
+                  <a id="prev" class="prev" href="javascript:;"></a>
+                  <a id="next" class="next" href="javascript:;"></a>
+                  <div id=slides>
+                    <div id=overflow>
+                      <div class=inner>
+                       {.repeated section items}
+                        <article >
+                            <div class="hero testimonial">
+                              <div class="col testimonial-section">
+                                <h3>{customContent.testimonialHeading}</h3>
+                                {customContent.testimonialBody.source}
+                                <h6 class="testimonial-name">{customContent.testimonialName}</h6>
+                              </div>
+                              <img class="" src="{customContent.testimonialImage.assetUrl}" alt="">
+                            </div>
+                        </article>
+                        {.end}
+                      </div> 
+                    </div> 
+                  </div> 
+              </div>
+            </div>
+          </div>
+
+      {.end}
+
+      {.collectionTypeNameEquals? contact}
+          <div id="contact" class="contact fullwidth">
+                <div class="hero hide-me contact-section" data-layout-label="Post Body" data-type="item" data-updated-on="1506908168768" id="item-59d197f2f09ca40ca90774df">
+                {.repeated section items}
+
+                  <h2 class="contact-header para">{customContent.ContactHeading}</h2>
+                  <div class="contact-body">{customContent.ContactBody.source}</div>
+                 
+                  {.end}
+
+                    
+
+<form class="gutter2 top-3 contact-form" action="https://daniella-sorace.squarespace.com" autocomplete="on" data-form-id="5a62773cec212d4634dc7a29" method="post" onsubmit="return (function(form) { Y.use('squarespace-form-submit', 'node', function(Y){ (new Y.Squarespace.FormSubmit({ formNode: Y.Node(form) })).submit('5a62773cec212d4634dc7a29', '59e2d2ae2278e799515c075c', 'item-59ebd872cd39c3b259d50a7b'); }); return false; })(this)">
+                  <div class="field-list clear">
+                    <fieldset class="form-item fields name required" id="name-yui_3_17_2_1_1516402478649_14335">
+                        <label for="fname">First Name:</label>
+                        <input class="field-element field-control" data-title="First" maxlength="30" name="fname" spellcheck="false" type="text">
+                
+                        <label for="fname">Last Name:</label>
+                        <input class="field-element field-control" data-title="Last" maxlength="30" name="lname" spellcheck="false" type="text">
+                    </fieldset>
+
+                    <div class="form-item field email required" id="email-yui_3_17_2_1_1516402478649_14336">
+                      <label for="email">Email:</label> 
+                      <input class="field-element" id="email-yui_3_17_2_1_1516402478649_14336-field" name="email" spellcheck="false" type="text">
+                    </div>
+                    <div class="form-item field textarea required" id="textarea-yui_3_17_2_1_1516402478649_14338">
+                      <label for="message">Message:</label>
+                      <textarea class="field-element" rows="10" id="textarea-yui_3_17_2_1_1516402478649_14338-field"></textarea>
+                    </div>
+                    
+                  </div>
+                  <div class="form-button-wrapper form-button-wrapper--align-left">
+                    <input class="button-default button-like submit-button button sqs-system-button sqs-editable-button" type="submit" value="Submit">
+                  </div>
+                  <div class="hidden form-submission-text" style="color:white;text-align: center;">Thank you!
+                      <h6 style="color:white;">Your email has been sent</h6>
+                  </div>
+                  <div class="hidden form-submission-html" data-submission-html=""></div>
+                </form>
+
+                </div>
+              </div>
+      {.end}
+
+      {.collectionTypeNameEquals? insta}
+        {.repeated section items}
+          <div id="instagram" class="fullwidth hide-me">
+            <h2 class="hide-me insta-feed para">Follow Us</h2>
+            <div class="instagram-tags">{customContent.instagramLinks.source}</div>
+             <div class="instafeed">
+             {body}
+             </div>
+          </div>
+        {.end}
+
+      {.end}
+
+
+
+
+  {.end}
+        
+
+      
+    
+      
+
+{.end}
+

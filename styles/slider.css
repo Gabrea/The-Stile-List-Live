@@ -1,0 +1,146 @@
+/*slider*/
+
+#prev {
+  height: 100%;
+  opacity: 0.5;
+  width: 10vw;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#prev:after {
+  font-family: 'squarespace-ui-font';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "\E02C";
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+#next {
+  height: 100%;
+  opacity: 0.5;
+  width: 10vw;
+  right: 0;
+  background: white;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#next:after {
+  font-family: 'squarespace-ui-font';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "\E02D";
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+  height: 46vw;
+}
+article img {
+  width: 100%;
+  height: 100%;
+}
+#slides .inner {
+  width: 5000%;
+  line-height: 0;
+  margin-left: -65vw;
+}
+#slides article {
+  width: 70vw;
+  margin-left: 5vw;
+  float: left;
+  height: 46vw;
+}
+#slider {
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+}
+//////// box ratios
+.box1 {
+  width: 70%;
+  height: 0;
+  padding-bottom: 46%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.box1 .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.box2 {
+  width: 40%;
+  height: 0;
+  padding-bottom: 70%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.box2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.box3 {
+  width: 70%;
+  height: 0;
+  padding-bottom: 46%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.box3 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.box4 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 170%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.box4 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}

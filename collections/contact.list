@@ -1,0 +1,8 @@
+
+{.repeated section items}
+
+<div class="test">
+{squarespace.main-content}
+
+</div>
+{.end}

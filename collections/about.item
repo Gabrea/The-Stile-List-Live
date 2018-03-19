@@ -1,0 +1,16 @@
+          <div id="about" class="fullwidth">
+            {.repeated section items}
+              <div class="box2 hero hide-me about-image">
+                <img class="" src="{customContent.aboutImage.assetUrl}" alt="">
+              </div>
+              <div class="hide-me about-section para">
+                {.if customContent.aboutHeader}
+                <h3 class="w-100">{customContent.aboutHeader}</h3>
+                {.end}
+                {.if customContent.aboutBody}
+                <div class="w-100 top-3">{customContent.aboutBody.source}</div>
+                {.end}
+              </div>
+            {.end}
+          </div>
+          

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+
+    <!-- include system scripts, page meta, and header code injection -->
+    {squarespace-headers}
+
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+       window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')
+    </script>
+    <squarespace:script src="myscript.js" />
+    <squarespace:script src="ofi.min.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <!--[if lte IE 9]>
+    <div class="update">
+        {.section website}<img class="logo-small" src="{logoImageUrl}" alt="">{.end}
+        <h1>This Browser isn’t supported</h1>
+        <hr class="line">
+        <p>The Stile List doesn’t support unsecure browsers.</p>
+        <p>To view this site please open it in a more secure browser. </p>
+        <a href="https://www.google.com/chrome/browser/desktop/index.html">Download Google Chrome here</a>
+      </div>
+    <![endif]-->
+  <body>
+    <div class="fullwindow">
+      <input type="checkbox" class="hidden" id="menu">
+          <nav class="nav main top-2">
+            {.section website}<a href="/"><img class="logo-small" src="{logoImageUrl}" alt=""></a>{.end}
+            <ul class="nav__menu">
+              <li class="nav__link"><a href="#about">About</a></li>
+              <li class="nav__link"><a href="#team">Team</a></li>
+              <li class="nav__link"><a href="#brands">Brands</a></li>
+              <li class="nav__link"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="hamburg">
+            <label checked for="menu" class="menu-icon">  
+              <span class="login-nav__text menu-icon__text"></span>
+            </label>
+          </nav>
+          <div class="whitebox">
+            <ul class="nav__inner">
+              <li class="inner__link"><a href="#about">About</a></li>
+              <li class="inner__link"><a href="#team">Team</a></li>
+              <li class="inner__link"><a href="#brands">Brands</a></li>
+              <li class="inner__link"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          {.section collection}
+            {.collectionTypeNameEquals? page}
+              <div class="main">
+              {squarespace.main-content}
+              </div>
+            {.or}
+            {squarespace.main-content}
+            {.end}
+          {.end}
+      
+    </div>
+  <footer>
+    <div class="">
+      <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions">Terms of Use</a> | The Stile List © 2018</p>
+    </div>
+  </footer>
+
+
+    <!-- combo and minify scripts when not logged in -->
+    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+
+    <!-- other scripts, and footer code injection -->
+    {squarespace-footers}
+
+  </body>
+</html>

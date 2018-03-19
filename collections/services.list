@@ -1,0 +1,12 @@
+     <div id="team-2" class="fullwidth">
+              {.repeated section items}
+              <div class="hide-me services-item">
+              
+                <img  class="hero" src="{customContent.serviceImage.assetUrl}" alt="">
+                <div class="service-box para">
+                  <h2 class="service-header">{customContent.serviceHeader}</h2>
+                  <div class="service-body">{customContent.serviceBody.source}</div>
+                </div>
+              </div>
+             {.end}
+          </div>
